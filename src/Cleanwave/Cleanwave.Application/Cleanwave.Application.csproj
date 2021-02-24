@@ -5,10 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="FluentValidation" Version="9.5.1" />
     <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
 	<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Models\" />
+    <Folder Include="ChillwaveSongs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cleanwave.Domain\Cleanwave.Domain.csproj" />
   </ItemGroup>
 
 </Project>
