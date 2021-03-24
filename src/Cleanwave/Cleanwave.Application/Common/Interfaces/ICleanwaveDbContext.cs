@@ -11,5 +11,7 @@ namespace Cleanwave.Application.Common.Interfaces
     public interface ICleanwaveDbContext
     {
         public DbSet<CHILLWAVE_SONG> ChillwaveSongs { get; set; }
+        public DbSet<CHILLWAVE_ALBUM> ChillwaveAlbums { get; set; }
+        public DbSet<CHILLWAVE_ARTIST> ChillwaveArtists { get; set; }
     }
 }

@@ -1,11 +1,6 @@
 ﻿using Cleanwave.Application.Common.Interfaces;
 using Cleanwave.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cleanwave.Infrastructure.Persistence
 {
@@ -18,6 +13,8 @@ namespace Cleanwave.Infrastructure.Persistence
         {}
 
         public virtual DbSet<CHILLWAVE_SONG> ChillwaveSongs { get; set; }
+        public virtual DbSet<CHILLWAVE_ALBUM> ChillwaveAlbums { get; set; }
+        public virtual DbSet<CHILLWAVE_ARTIST> ChillwaveArtists { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

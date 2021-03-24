@@ -8,7 +8,7 @@ namespace Cleanwave.Infrastructure.Persistence.Configuration
     {
         public void Configure(EntityTypeBuilder<CHILLWAVE_SONG> builder)
         {
-            builder.HasKey(e => e.ID_SONG);
+            builder.HasKey(e => e.ID);
             builder.Property(e => e.TITLE)
                 .IsRequired();
         }

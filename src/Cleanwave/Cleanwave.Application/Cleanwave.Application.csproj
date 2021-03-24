@@ -1,25 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="FluentValidation" Version="9.5.1" />
-    <PackageReference Include="MediatR" Version="9.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
-	<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="FluentValidation" Version="9.5.3" />
+		<PackageReference Include="MediatR" Version="9.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
 
-  <ItemGroup>
-    <Folder Include="Common\Models\" />
-    <Folder Include="ChillwaveSongs\" />
-  </ItemGroup>
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Cleanwave.Domain\Cleanwave.Domain.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Common\Models\" />
+		<Folder Include="UseCases\Albums\Commands\GetAlbum\" />
+		<Folder Include="UseCases\Albums\Commands\GetSongsFromAlbum\" />
+		<Folder Include="UseCases\Albums\Queries\CreateAlbum\" />
+		<Folder Include="UseCases\Artists\Commands\CreateArtist\" />
+		<Folder Include="UseCases\Artists\Queries\GetArtist\" />
+		<Folder Include="UseCases\Artists\Queries\GetAlbumsFromArtist\" />
+		<Folder Include="UseCases\Artists\Queries\GetSongsFromArtists\" />
+		<Folder Include="UseCases\Artists\Queries\" />
+		<Folder Include="UseCases\Songs\Queries\CreateSong\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Cleanwave.Domain\Cleanwave.Domain.csproj" />
+	</ItemGroup>
 
 </Project>
