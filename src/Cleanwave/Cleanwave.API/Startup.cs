@@ -23,7 +23,7 @@ namespace Cleanwave.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplication();
-            services.AddInfrastructure();
+            services.AddInfrastructure(Configuration);
 
             services
                 .AddControllers(opt => opt.Filters.Add<APIExceptionFilter>())
